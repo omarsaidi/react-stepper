@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-stepper'
+import { Stepper } from 'react-stepper'
 import 'react-stepper/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <Stepper min={2} max={10} input={3} onValueChange={(e: any) => console.log(e)} />
 }
 
 export default App
